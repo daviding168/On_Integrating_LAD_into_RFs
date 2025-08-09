@@ -1,0 +1,12 @@
+numpy
+pandas
+scikit-learn
+Cython
+psutil
+tqdm
+scipy
+numba
+matplotlib
+python-sat
+anytree
+namedlist
