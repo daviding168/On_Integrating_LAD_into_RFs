@@ -49,59 +49,57 @@ Binary datasets valid string to run the experiments:
 
 For the comparison between our proposed 2 versions of RF and classical RF. Note that we always use the default parameters (i.e. 100 decision trees for each forest)
 
-## To run the RF-sklearn independently
+# To run the RF-sklearn independently
 
     python3 run_RF_sklearn.py dataset_name max-depth
 
-## For example, we want to run the RF-sklearn independently using `drilling` dataset with depth=`4`
+# For example, we want to run the RF-sklearn independently using `drilling` dataset with depth=`4`
     
     python3 run_RF_sklearn.py drilling 4
 
-## To run the RF-LAD (majority-vote) independently
+# To run the RF-LAD (majority-vote) independently
 
     python3 run_RF_using_DTs_from_LAD.py dataset_name max-depth majority_votes
 
-## For example, we want to run the RF-LAD (majority-vote) independently using `drilling` dataset with depth=`4`
+# For example, we want to run the RF-LAD (majority-vote) independently using `drilling` dataset with depth=`4`
     
     python3 run_RF_using_DTs_from_LAD.py drilling 4 majority_votes
 
-## To run the RF-LAD (soft-vote) independently
+# To run the RF-LAD (soft-vote) independently
 
     python3 run_RF_using_DTs_from_LAD.py dataset_name max-depth soft_votes
 
-## For example, we want to run the RF-LAD (soft-vote) independently using `drilling` dataset with depth=`4`
+# For example, we want to run the RF-LAD (soft-vote) independently using `drilling` dataset with depth=`4`
     
     python3 run_RF_using_DTs_from_LAD.py drilling 4 soft_votes
 
 
-## To run the comparison altogether between RF-sklearn, RF-LAD (majority-vote), and RF-LAD (soft-vote)
+# To run the comparison altogether between RF-sklearn, RF-LAD (majority-vote), and RF-LAD (soft-vote)
 
     python3 run_LAD_based_technique_with_RF.py dataset_name max-depth
 
 
-## For example, we want to run the comparison joinly using `drilling` dataset with depth=`4`
+# For example, we want to run the comparison joinly using `drilling` dataset with depth=`4`
 
     python3 run_LAD_based_technique_with_RF.py drilling 4
 
-## Another example, we want to run the comparison using `loan` dataset with depth=`3`
+# Another example, we want to run the comparison using `loan` dataset with depth=`3`
 
     python3 run_LAD_based_technique_with_RF.py loan 3
 
-## To plot the comparison between the number of features, the average size of AXps, and the average size of CXps, used by our RF-LAD and the classical RF when depth=3
+# To plot the comparison between the number of features, the average size of AXps, and the average size of CXps, used by our RF-LAD and the classical RF when depth=3
 
     python bar_plot_depth_3.py
 
-## To plot the comparison between the number of features, the average size of AXps, and the average size of CXps, used by our RF-LAD and the classical RF when depth=4
+# To plot the comparison between the number of features, the average size of AXps, and the average size of CXps, used by our RF-LAD and the classical RF when depth=4
 
     python bar_plot_depth_4.py
 
-## To plot the comparison between the number of features, the average size of AXps, and the average size of CXps, used by our RF-LAD and the classical RF when depth=5
+# To plot the comparison between the number of features, the average size of AXps, and the average size of CXps, used by our RF-LAD and the classical RF when depth=5
 
     python bar_plot_depth_5.py
 
 
-## To plot the comparison between the average prediction accuracy, the number of features, the average size of AXps, the average size of CXps, the average time of AXps, and the average time of CXps used by our RF-LAD and the classical RF when depth ∈ {10, 15, 20}, for "pd-speech" dataset
+# To plot the comparison between the average prediction accuracy, the number of features, the average size of AXps, the average size of CXps, the average time of AXps, and the average time of CXps used by our RF-LAD and the classical RF when depth ∈ {10, 15, 20}, for "pd-speech" dataset
 
     python pd_speech_depth_10_15_20.py
-
-### Please feel free to contact us for more details if you have any questions in the provided codes.
