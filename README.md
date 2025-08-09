@@ -1,5 +1,5 @@
 # On Integrating Logical Analysis of Data into Random Forests
-The Source code for paper: **On Integrating Logical Analysis of Data into Random Forests**, published in IJCAI 2025.
+Source code for paper: **On Integrating Logical Analysis of Data into Random Forests**, published in IJCAI 2025.
 
 
 ## A brief explanation for each folder
